@@ -1,0 +1,97 @@
+#header{
+    .header-content{
+        .header-top{
+            height: 72px;
+            background-color: $color000;
+            .logo{
+                svg{
+                    fill: white;
+                }
+            }
+            .search{
+                form{
+                    height: 48px;
+                    width: 700px;
+                    transition: width .2s ease-out;
+                    div{
+                        input{
+                            width: 80%;
+                            padding: 10px 30px;
+                            outline: 0;
+                            box-shadow: none;
+                            border: 0;
+                            background-color: #313131;
+                            font-size: 17px;
+                            line-height: 1.47em;
+                            font-weight: 400;
+                            color: #9a9a9a;
+                        }
+                        button{
+                            display: block;
+                            width: 100%;
+                            max-width: 92px;
+                            height: 45px;
+                            padding: 0;
+                            border: 0;
+                            font-size: 19px;
+                            color: #fff;
+                            background-color: #313131;
+                            position: relative;
+                            &::after{
+                                content: "";
+                                position: absolute;
+                                background-color:$mainColor ;
+                                left: 0;
+                                top: 0;
+                                width: 6px;
+                                height: 100%;
+                                z-index: 1;
+                                transition: width .4s;
+                            }
+                        }
+                    }
+                }
+            }
+            .store{
+                a{
+                    span{
+                        color: $colorWhite;
+                    }
+                }
+                .hamburger {
+                    width: 100px;
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: space-between;
+                    cursor: pointer;
+                    transition: all 0.3s;
+                    gap: 5px;
+                  
+                    .bar {
+                      width: 50px;
+                      height: 4px;
+                      background-color: $colorWhite;
+                      transition: all 0.3s;
+                      &:last-child{
+                        width: 25%;
+                        
+                      }
+                    }
+                  
+                    &:hover {
+                      .bar {
+                        width: 50px;
+                        &:last-child {
+                          width: 50px;
+                        }
+                        &:first-child{
+                            width: 25%;
+                            margin-left: 25%
+                        }
+                      }
+                    }
+                  }
+            }
+        }
+    }
+}

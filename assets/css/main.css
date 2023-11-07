@@ -1,0 +1,118 @@
+@import url("https://fonts.googleapis.com/css2?family=Oxanium:wght@200;300;400;500;600;700;800&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+  background-color: inherit;
+}
+
+img {
+  max-width: 100%;
+}
+
+ul, li {
+  list-style: none;
+}
+
+ul, ol {
+  padding: 0;
+  margin: 0;
+}
+
+.full-height {
+  min-height: 100vh;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding-top: 80px;
+  padding-bottom: 80px;
+}
+
+body {
+  font-family: "Oxanium", sans-serif;
+}
+
+#header .header-content .header-top {
+  height: 72px;
+  background-color: #000;
+}
+#header .header-content .header-top .logo svg {
+  fill: white;
+}
+#header .header-content .header-top .search form {
+  height: 48px;
+  width: 700px;
+  transition: width 0.2s ease-out;
+}
+#header .header-content .header-top .search form div input {
+  width: 80%;
+  padding: 10px 30px;
+  outline: 0;
+  box-shadow: none;
+  border: 0;
+  background-color: #313131;
+  font-size: 17px;
+  line-height: 1.47em;
+  font-weight: 400;
+  color: #9a9a9a;
+}
+#header .header-content .header-top .search form div button {
+  display: block;
+  width: 100%;
+  max-width: 92px;
+  height: 45px;
+  padding: 0;
+  border: 0;
+  font-size: 19px;
+  color: #fff;
+  background-color: #313131;
+  position: relative;
+}
+#header .header-content .header-top .search form div button::after {
+  content: "";
+  position: absolute;
+  background-color: #FF4D24;
+  left: 0;
+  top: 0;
+  width: 6px;
+  height: 100%;
+  z-index: 1;
+  transition: width 0.4s;
+}
+#header .header-content .header-top .store a span {
+  color: #fff;
+}
+#header .header-content .header-top .store .hamburger {
+  width: 100px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  cursor: pointer;
+  transition: all 0.3s;
+  gap: 5px;
+}
+#header .header-content .header-top .store .hamburger .bar {
+  width: 50px;
+  height: 4px;
+  background-color: #fff;
+  transition: all 0.3s;
+}
+#header .header-content .header-top .store .hamburger .bar:last-child {
+  width: 25%;
+}
+#header .header-content .header-top .store .hamburger:hover .bar {
+  width: 50px;
+}
+#header .header-content .header-top .store .hamburger:hover .bar:last-child {
+  width: 50px;
+}
+#header .header-content .header-top .store .hamburger:hover .bar:first-child {
+  width: 25%;
+  margin-left: 25%;
+}/*# sourceMappingURL=main.css.map */
