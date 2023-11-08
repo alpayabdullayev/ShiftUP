@@ -1,3 +1,4 @@
+// Cursor 
 // const cursor = document.querySelector('.cursor');
 
 // document.addEventListener('mousemove', function(x) {
@@ -11,6 +12,8 @@
 //     this.classList.remove('active');
 // });
 
+
+// Fixed Navbar scripts
 window.addEventListener("scroll", function () {
   let position = window.scrollY;
   let navbar2 = document.getElementById("navbar2");
@@ -38,24 +41,10 @@ window.addEventListener("scroll", function () {
 });
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
+// offCanvas SideBar open and close  
 const offCanvasSideBar = document.getElementById("offCanvasSideBar")
-
 const openOffCanvasSideBar = document.querySelector(".hamburger")
 const openOffCanvasSideBarFiexed = document.querySelector(".hamburgerFixed")
-
 const offcanvasCloseBtnSideBar = document.getElementById("offcanvasCloseBtnSideBar")
 
 offCanvasSideBar.style.transform = "translateX(100%)"
@@ -71,55 +60,22 @@ openOffCanvasSideBar.addEventListener("click",()=>{
   openOffCanvasSideBarFunction()
 } );
 
-
-
 offcanvasCloseBtnSideBar.addEventListener("click", () => {
     offCanvasSideBar.style.transform = "translateX(100%)";
 });
   
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
+// offCanvas and SideBarMobNav 
 const offCanvas = document.getElementById("offCanvas");
-
-
 const offCanvasOpenBtn = document.querySelector(".spans");
 const offCanvasOpenBtnFixed = document.querySelector(".spansFixed");
 const offCanvasCloseBtn = document.getElementById("offcanvasCloseBtn");
-
-
-offCanvas.style.transform = "translateX(100%)";
-
-
-
-offCanvasOpenBtn.addEventListener("click", openOffCanvas);
-offCanvasOpenBtnFixed.addEventListener("click", openOffCanvas);
-offCanvasCloseBtn.addEventListener("click", () => {
-  offCanvas.style.transform = "translateX(100%)";
-});
-
-
-
-
-
-
 const sideBar = document.getElementById("sideBar");
 const sideBarOpenBtn = document.getElementById("hamburgerFixedSideBar");
 const sideBarCloseBtn = document.getElementById("sideBarCloseBtn");
 
-
+offCanvas.style.transform = "translateX(100%)";
 sideBar.style.transform = "translateY(-900px)";
 
 function openSideBar() {
@@ -132,6 +88,11 @@ function openOffCanvas() {
   offCanvas.style.transform = "translateX(0)";
 }
 
+offCanvasOpenBtn.addEventListener("click", openOffCanvas);
+offCanvasOpenBtnFixed.addEventListener("click", openOffCanvas);
+offCanvasCloseBtn.addEventListener("click", () => {
+  offCanvas.style.transform = "translateX(100%)";
+});
 
 sideBarOpenBtn.addEventListener("click", openSideBar);
 sideBarCloseBtn.addEventListener("click", () => {
@@ -139,9 +100,7 @@ sideBarCloseBtn.addEventListener("click", () => {
 });
 
 
-
-
-
+// MobilNavbar acccardion
 const mobileNavlink = document.querySelectorAll('.mobile-navlink');
 const sideBarMenu = document.querySelectorAll('.sideBarMenu');
 

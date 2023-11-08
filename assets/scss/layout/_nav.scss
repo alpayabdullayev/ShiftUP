@@ -1,3 +1,4 @@
+// Header Start
 #header{
     .header-content{
         .header-top{
@@ -244,8 +245,9 @@
         }
           
 }
+// Header end
 
-
+// NavbarFixed start
 #navbar2{
     z-index: 999999999999999;
     height: 72px;
@@ -482,8 +484,9 @@
 
     }
 }
+// NavbarFixed end
 
-
+// SideBar start
 #sideBar{
     background-color: $colorWhite;
     position: fixed;
@@ -569,7 +572,9 @@
           
     }
 }
+// sideBar end
 
+//sideBarMeni display start
 .sideBarMenu {
     display: none;
 }
@@ -577,3 +582,4 @@
 .sideBarMenu.active {
     display: block;
 } 
+//sideBarMeni display end
