@@ -9,10 +9,13 @@
 
 // Components
 @import "./components/cursor";
+@import "./components/components";
+@import "./components/offCanvas";
+
 
 // Layout
 @import "./layout/nav";
 
 // Pages
-
+@import "./pages/home"
 
