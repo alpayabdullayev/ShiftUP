@@ -1,0 +1,111 @@
+#hero{
+    height: 100%;
+    min-height: 300vh;
+    .heroSlider{
+        height: 100%;
+        width: 100%;
+        background-color: $colorBgOpacity;
+        .sipperSlide{
+            .colImg{
+
+                .pic{
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    img{
+                        margin-left:200px ;
+                    }
+                }
+            }
+            .slider-content{
+                padding-left: 30px;
+                h1{
+                    font-size: 52px;
+                }
+                p{
+                    font-size: 22px;
+                }
+                .btnSldier{
+                    a{
+
+                        color: #000;
+                        &::after{
+                            content: "";
+                            position: absolute;
+                            background-color: $mainColor;
+                            left: 0;
+                            top: 0;
+                            width: 6px;
+                            height: 98%;
+                            z-index: 1;
+                            
+                        }
+                    }
+                }
+
+            }
+
+            .next-prev{
+                position: relative;
+
+                top: 30px;
+                .swiper-button-next{
+                    position: relative;
+                    left: 60px;
+                    bottom: 40px;
+                }
+                .swiper-button-prev{
+                    position: relative;
+                    left: 10px;
+                    bottom: 62px;
+                }
+            }
+        }
+    }
+    .heroProduct {
+        .heroProductItems {
+            .row {
+                .col-12 {
+                    &.col-lg-4 {
+                        .card {
+                            display: block;
+                            border: none;
+                            transition: all 0.5s ease;
+                        
+                            .car-item {
+                                .car-img {
+                                    .secondary-img {
+                                        display: none;
+                                        opacity: 0;
+                                        visibility: hidden;
+                                        transition: all 0.5s ease;
+                                    }
+                        
+                                    &:hover {
+                                        .primary-img {
+                                            display: none;
+                                            opacity: 0;
+                                            visibility: hidden;
+                                        }
+                        
+                                        .secondary-img {
+                                            display: block;
+                                            opacity: 1;
+                                            visibility: visible;
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                        
+                    }
+                }
+            }
+        }
+    }
+    
+}
+
+
+
+
