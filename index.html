@@ -5,6 +5,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>SHIFT UP</title>
 
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+
+    <!-- AOS -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
     <!-- FontAwesome Links -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 
@@ -13,6 +18,7 @@
 
     <!-- CSS LINKS -->
     <link rel="stylesheet" href="./assets/css/main.css" />
+
   </head>
   <body>
     <!-- Cursor Start -->
@@ -24,8 +30,8 @@
 
     <header id="header">
         <div class="header-content d-none d-lg-block">
-            <div class="header-top ps-4 pe-4 d-flex justify-content-between align-items-center">
-                <div class="logo pe-2">
+            <div class="header-top ps-4 pe-4 d-flex justify-content-between align-items-center ">
+                <div class="logo">
                     <a href="https://www.instagram.com/alpay.abdlyv/"><svg xmlns="http://www.w3.org/2000/svg" color="white" width="164" height="21" viewBox="0 0 164 21">
                         <g id="logo-white" transform="translate(-365.544 -290.551)">
                         <path d="M405.076,291.218a.8.8,0,0,0-.823-.609h-2.71a.86.86,0,0,0-.872.845v7.25a.172.172,0,0,1-.172.172H388.593a.172.172,0,0,1-.171-.172v-7.25a.861.861,0,0,0-.874-.845h-2.71a.884.884,0,0,0-.857.643l-.016,19.38a.864.864,0,0,0,.874.873h2.71a.864.864,0,0,0,.874-.873v-7.25a.172.172,0,0,1,.171-.172H400.5a.172.172,0,0,1,.172.172v7.25a.863.863,0,0,0,.872.873h2.71a.864.864,0,0,0,.874-.873V291.454a.4.4,0,0,0-.033-.191A.147.147,0,0,1,405.076,291.218Z" transform="translate(8.836 0.028)"></path>
@@ -40,29 +46,283 @@
                 </div>
                 <div class="search">
                     <form action="">
-                        <div class="d-flex">
+                        <div class="d-flex justify-content-center align-items-center">
                             <input type="text" placeholder="Type your search here...">
                             <button><i class="fa-solid fa-magnifying-glass"></i></button>
                         </div>
                     </form>
                 </div>
                 <div class="store d-flex gap-3">
-                    <a href="">
-                        <span class="text-white">CARD</span>
-                    </a>
+                    <div class="spans">
+                        <span class="text-white" id="basket">CARD</span>
+                        <span class="count">0</span>
+                    </div>
+
                     <div class="hamburger">
                         <span class="bar"></span>
                         <span class="bar"></span>
                         <span class="bar"></span>
-                      </div>
+                    </div>
                 </div>
             </div>
-            <div class="header-bottom"></div>
+            <div class="header-bottom  pe-4 d-flex justify-content-between align-items-center">
+                <nav>
+                        <div class="navbar-links ">
+                            <ul class="d-flex justify-content-between align-items-center navbar-ul">
+                                <li class="beforeItem navbar-li"><a href="" class="nav-link">Homes</a></li>
+                                <li class=" nav-item navbar-li"><a href="" class="nav-link">Pages</a>
+                                    <ul class="dropdown">
+                                        <li class="dropdown-item-li">
+                                          <a href="#" class="dropdown-link">About US</a>
+                                        </li>
+                                        <li class="dropdown-item-li">
+                                          <a href="#" class="dropdown-link">WHO WE ARE</a>
+                                        </li>
+                                        <li class="dropdown-item-li">
+                                            <a href="#" class="dropdown-link">FAQ</a>
+                                          </li>
+                                          <li class="dropdown-item-li">
+                                            <a href="#" class="dropdown-link">coming soon</a>
+                                          </li>
+                                    </ul></li>
+                                <li class="nav-item navbar-li">
+                                    <a class="nav-link" href="">Portfolio</a>
+                                    <ul class="dropdown">
+                                        <li class="dropdown-item-li">
+                                          <a href="#" class="dropdown-link"> List Types</a>
+                                        </li>
+                                        <li class="dropdown-item-li">
+                                          <a href="#" class="dropdown-link">Single Types</a>
+                                        </li>
+                                    </ul>
+                                </li>
+                                <li class="navbar-li"><a href="" class="nav-link">Blog</a></li>
+                                <li class="navbar-li"><a href="" class="nav-link">Shop</a></li>
+
+                            </ul>
+                        </div>
+                </nav>
+                <div class="contact d-flex justify-content-between align-items-center gap-4">
+                    <p class="support pt-5">Support center 24/7</p>
+                    <h2 class="number">
+                        + 3 759 315 - 6427</h2>
+                </div>
+            </div>
         </div>
     </header>
 
 
     
+    <div class="offCanvasSideBar" id="offCanvasSideBar">
+        <div class="offcanvas-content" id="offcanvas-content">
+          <div class="offcanvasCloseBtn ms-2 d-flex justify-content-between align-items-center">
+            <h1 class="mt-2">SHIFT UP</h1>
+            <span id="offcanvasCloseBtnSideBar"><i class="fa-solid fa-x" style="color: #000;"></i></span>       
+          </div>
+    
+        </div>
+        <div id="offcanvasContentMain">
+            <p>Lorem ipsum dolor sit amet, consectetur
+                adipiscing elit. Aenean et tortor ac sem
+                varius tincidunt non ac eros.</p>
+                
+                <div class="supportCenter mt-5">
+                    <span class="mt-5">Support Center </span>
+                    <h2 >+ 3 759 315 - 6427</h2>
+                </div>
+
+                <div class="ourAdress mt-5">
+                    <span class="">Our address
+
+                    </span>
+                    <h5>94 ROA MALAKA, <br>
+                    WEST JAKARTA CITY</h5>
+                </div>
+
+        </div>
+
+        <div class="ms-2 mt" id="offcanvasEnd">
+    
+        </div>
+      </div>
+
+    <div class="offCanvas" id="offCanvas">
+        <div class="offcanvas-content" id="offcanvas-content">
+          <div class="offcanvasCloseBtn ms-2 d-flex justify-content-between align-items-center">
+            <h5>Shopping Cart</h5>
+            <span id="offcanvasCloseBtn"><i class="fa-solid fa-x" style="color: #000;"></i></span>
+            
+          </div>
+    
+        </div>
+        <div id="offcanvasContentMain">
+            
+        </div>
+        <div class="div ms-2 mt-4">
+          <div id="totalCost"></div>
+          
+          <div id="discountedTotalCost"></div>
+        </div>
+        <div class="ms-2 mt" id="offcanvasEnd">
+    
+        </div>
+      </div>
+
+    <main>
+        <section id="hero"> 
+            <div class="heroSlider">
+                <div class="container">
+                    <div class="sipperSlide row justify-content-center align-items-center text-center text-lg-start">
+
+
+                        <div class="swiper mySwiper">
+                            <div class="swiper-wrapper">
+                              <div class="swiper-slide row justify-content-center align-items-center">
+                                <div class="col-12 col-lg-7 colImg" data-aos="fade-right" data-aos-duration="2000">
+                                    <div class="pic">
+                                        <img src="https://shiftup.qodeinteractive.com/wp-content/uploads/2021/12/home4-slide-4.png" alt="">
+                                    </div>
+                                </div>
+                                <div class="col-12 col-lg-5 pb-5 colContent" data-aos="fade-up" data-aos-duration="2000">
+                                    <div class="slider-content">
+                                        <h1>JUST ARRIVED <br> AT OUR SHOP</h1>
+                                        <P>Lorem ipsum dolor sit amet.</P>
+                                        <div class="btnSldier pt-3">
+                                            <a class="page-btn left-to-right" href=""><span>+</span>VIEW MORE</a>
+                                        </div>
+                                    </div>
+                                </div>
+                              </div>
+                              <div class="swiper-slide row justify-content-center align-items-center">
+                                <div class="col-12 col-lg-7 colImg" data-aos="fade-right" data-aos-duration="2000">
+                                    <div class="pic">
+                                        <img src="https://shiftup.qodeinteractive.com/wp-content/uploads/2021/12/home4-slide-3.png" alt="">
+                                    </div>
+                                </div>
+                                <div class="col-12 col-lg-5 pb-5 colContent" data-aos="fade-up" data-aos-duration="2000">
+                                    <div class="slider-content">
+                                        <h1>JUST ARRIVED <br> AT OUR SHOP</h1>
+                                        <P>Lorem ipsum dolor sit amet.</P>
+                                        <div class="btnSldier pt-3">
+                                            <a class="page-btn left-to-right" href=""><span>+</span>VIEW MORE</a>
+                                        </div>
+                                    </div>
+                                </div>
+                              </div>
+                              <div class="swiper-slide row justify-content-center align-items-center">
+                                <div class="col-12 col-lg-7 colImg" data-aos="fade-right" data-aos-duration="2000">
+                                    <div class="pic">
+                                        <img src="https://shiftup.qodeinteractive.com/wp-content/uploads/2021/12/home-4-slide2.png" alt="">
+                                    </div>
+                                </div>
+                                <div class="col-12 col-lg-5 pb-5 colContent" data-aos="fade-up" data-aos-duration="2000">
+                                    <div class="slider-content">
+                                        <h1>JUST ARRIVED <br> AT OUR SHOP</h1>
+                                        <P>Lorem ipsum dolor sit ametalpay.</P>
+                                        <div class="btnSldier pt-3">
+                                            <a class="page-btn left-to-right" href=""><span>+</span>VIEW MORE</a>
+                                        </div>
+                                    </div>
+                                </div>
+                              </div>
+                              <div class="swiper-slide row justify-content-center align-items-center">
+                                <div class="col-12 col-lg-7 colImg" data-aos="fade-right" data-aos-duration="2000">
+                                    <div class="pic">
+                                        <img src="https://shiftup.qodeinteractive.com/wp-content/uploads/2021/11/rev-home-4-img-1.png" alt="">
+                                    </div>
+                                </div>
+                                <div class="col-12 col-lg-5 pb-5 colContent" data-aos="fade-up" data-aos-duration="2000">
+                                    <div class="slider-content">
+                                        <h1>JUST ARRIVED <br> AT OUR SHOP</h1>
+                                        <P>Lorem ipsum dolor sit ametalpay.</P>
+                                        <div class="btnSldier pt-3">
+                                            <a class="page-btn left-to-right" href=""><span>+</span>VIEW MORE</a>
+                                        </div>
+                                    </div>
+                                </div>
+                              </div>
+                            </div>
+                            
+                            <div class="next-prev ">
+                                <div class="swiper-button-next text-dark"></div>
+                                <div class="swiper-button-prev text-dark"></div>
+                            </div>
+                            <div class="swiper-pagination"></div>
+                          </div>
+
+
+
+                    </div>
+                </div>
+            </div>
+            <div class="heroProduct">
+                <div class="heroProductItems">
+                    <div class="row">
+                        <div class="col-12 col-lg-4"></div>
+                        <div class="col-12 col-lg-4"></div>
+                        <div class="col-12 col-lg-4"></div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
+   <script>
+var colImg = document.querySelectorAll(".colImg");
+var colContent = document.querySelectorAll(".colContent");
+var swiper = new Swiper(".mySwiper", {
+  slidesPerView: 1,
+  spaceBetween: 30,
+//   autoplay: {
+//     delay: 2500,
+//     disableOnInteraction: false,
+//   },
+  loop: true,
+  delay: 2500,
+  pagination: {
+    el: ".swiper-pagination",
+    clickable: true,
+  },
+  navigation: {
+    nextEl: ".swiper-button-next",
+    prevEl: ".swiper-button-prev",
+  },
+  on: {
+    slideChangeTransitionStart: function () {
+      for (var i = 0; i < colImg.length; i++) {
+        colImg[i].style.opacity = "0";
+        colContent[i].style.opacity = "0";
+      }
+      colImg.forEach(function (el) {
+        el.classList.remove('aos-init', 'aos-animate');
+      });
+      colContent.forEach(function (el) {
+        el.classList.remove('aos-init', 'aos-animate');
+      });
+    },
+    slideChangeTransitionEnd: function () {
+      colImg.forEach(function (el) {
+        el.style.opacity = "1";
+      });
+      colContent.forEach(function (el) {
+        el.style.opacity = "1";
+      });
+      AOS.refresh();
+    },
+  }
+});
+
+AOS.init();
+
+    </script>
+
+    <!-- AOS -->
+
+
 
 
     <!-- Bootstrap JS -->

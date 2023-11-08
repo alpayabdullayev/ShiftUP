@@ -1,0 +1,100 @@
+#offCanvas {
+    position: fixed;
+  top: 0;
+  right: 0;
+  width: 300px;
+  height: 100%;
+  background-color: #fff;
+  transition: transform 0.5s ease;
+  z-index: 111111111;
+  transform: translateX(100%); 
+  overflow-y: auto;
+    .offcanvas-content {
+        position: relative;
+        padding: 55px 20px;
+
+    }
+    &.open{
+        transform: translatex(0);
+    }
+
+    #offcanvasContentMain{
+        .miniCard{
+            justify-content: center;
+            align-items: center;
+            gap: 20px;
+            .card-img{
+                width: 100px;
+            }
+            .cardInfo{
+                h5{
+                    font-size: 14px;
+                }
+            }
+            .cardCount{
+                button{
+                    background-color: #505050;
+                    border: 1px solid #505050;
+                    color: #ffffff;
+                    padding: 5px;
+                    text-align: center;
+                    border-radius: 5px
+                }
+            }
+            .delete{
+                button{
+                    border: none;
+                    background:none;
+                    margin-bottom: 38px;
+                }
+
+            }
+        }
+    }
+}
+
+
+#offCanvasSideBar {
+  position: fixed;
+  top: 0;
+  right: 0;
+  width: 450px;
+  height: 100%;
+  background-color: #fff;
+  transition: transform 0.5s ease;
+  z-index: 111111111;
+  transform: translateX(100%); 
+  overflow-y: auto;
+    .offcanvas-content {
+        position: relative;
+        padding: 85px 20px;
+
+    }
+    &.open{
+        transform: translatex(0);
+    }
+    #offcanvasContentMain{
+        padding: 0 40px;
+    }
+
+
+}
+
+
+
+
+// <div class="col-12 col-md-6 col-lg-4 cardTesti">
+// <div class="userInfo">
+//   <div class="pic">
+//     <img src="https://htmldemo.net/pronia/pronia/assets/images/testimonial/user/1.png" alt="">
+//   </div>
+//   <div class="user-content">
+//     <h4 class="userName mb-1">Phoenix Baker</h4>
+//     <span class="clientInfo">Client</span>
+// </div>
+// </div>
+// <p class="userComment mt-3"><i>Lorem ipsum dolor sit amet, conse adipisic elit, sed do eiusmod
+//   tempo
+//   incididunt ut labore et dolore. magna</i> 
+// </p>
+// </div>
