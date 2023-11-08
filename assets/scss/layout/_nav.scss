@@ -55,6 +55,7 @@
             .store{
                 .spans{
                     min-width: 68px;
+                    cursor: pointer;
                     span{
                         color: $colorWhite;
                     }
@@ -144,7 +145,7 @@
                     .dropdown {
                         position: absolute;
                         z-index: 1;
-                        box-shadow: rgba(17, 12, 46, 0.15) 0px 48px 100px 0px;
+                        box-shadow: rgba(17, 17, 26, 0.1) 0px 8px 24px, rgba(17, 17, 26, 0.1) 0px 16px 56px, rgba(17, 17, 26, 0.1) 0px 24px 80px;
                         padding: 15px 80px 15px 15px;
                         min-width: 200px;
                         text-align: left;
@@ -242,4 +243,337 @@
             }
         }
           
+}
+
+
+#navbar2{
+    z-index: 999999999999999;
+    height: 72px;
+    justify-content: center;    
+    align-items: center;
+    display: none;
+    position: fixed;
+    
+    .navbarFixed{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        height: 72px;
+
+        .navbar-links {
+                
+            .navbar-ul {
+              .navbar-li {
+                height: 100%;
+                padding:17px;
+                // position: relative;
+
+                &:hover body{
+                    background-color: rgba(0,0,0,0.5);
+                }
+                .nav-link{
+                  position: relative;
+                  display: flex;
+                  
+                  align-items: center;
+                  height: 100%;
+                  font-weight: 600;
+                  text-transform: uppercase;
+                  transition: all 0.3s;
+                  color: $color000;
+                  &:hover::before{
+                    content: "";
+                    position: absolute;
+                    width: 100%;
+                    height: 6px;
+                    background-color: $mainColor;
+                    left: 0;
+                    top: -18px;
+                    transition: all 0.3s;
+
+                  }
+                }
+
+                .dropdown {
+                    position: absolute;
+                    z-index: 1;
+                    box-shadow: rgba(17, 12, 46, 0.15) 0px 48px 100px 0px;
+                    padding: 15px 80px 15px 15px;
+                    min-width: 200px;
+                    text-align: left;
+                    opacity: 0;
+                    z-index: 999999;
+                    visibility: hidden;
+                    background: #fff;
+                    transform: scaleY(0);
+                    transition: all 0.4s;
+                    background-color: rgba(255,255,255,0.1);
+                    .dropdown-item-li{
+                        padding: 12px;
+                        transition: all 0.5s ease;
+                        &:hover .dropdown-link{
+                            color: $mainColor;
+                            // transform: translateX(5px);
+                            margin-left: 5px;
+                            transition: all 0.5s ease;
+                        }
+                    }
+                    
+                  }
+        
+                  &::after {
+                    content: '';
+                    width: 0%;
+                    height: 1px;
+                    // background-color: $mainColor;
+                    position: absolute;
+                    left: 0;
+                    top: 100%;
+                    transition: all 0.4s;
+                  }
+                  &:hover::after {
+                    width: 100%;
+                  }
+                  &:hover {
+                    .nav-link {
+                      color: $mainColor;
+                      transition: all 0.3s;
+                    }
+                  }
+                  .nav-link {
+                    font-size: 0.9rem;
+                    color: $color000;
+                  }
+                }
+                .beforeItem{
+                    background-color: $colorBgOpacity;
+                    position: relative;
+                    &::before{
+                      content: "";
+                      position: absolute;
+                      width: 100%;
+                      height: 6px;
+                      top: 0;
+                      left: 0;
+                      background-color: $mainColor;
+                      opacity: 1;
+                    }    
+                }
+                .nav-item:hover {
+                  .dropdown {
+                    position: absolute;
+                    box-shadow: rgba(17, 12, 46, 0.15) 0px 48px 100px 0px;
+                    padding: 15px 75px 15px 15px;
+                    text-align: left;
+                    opacity: 1;
+                    visibility: visible;
+                    transform: scaleY(1);
+                    transition: all 0.4s;
+                    min-width: 250px;
+                    .dropdown-link {
+                      color: $color000;
+                      &:hover{
+                        transform: translateX(20px);
+                      }
+                    }
+                  }
+                }
+
+
+
+              }
+        }
+        .store{
+
+            color: #313131;
+            .spansFixed{
+                min-width: 68px;
+                color: $color000;
+                display: flex;
+                width: 100%;
+                span{
+                    color: $color000;
+                }
+                .countfixed{
+                    font-size: 11px;
+                    padding: 4px;
+                    text-align: center;
+                    line-height: 1.4;
+                    color: #fff;
+                    background-color: $mainColor;
+                    position: relative;
+                    top: -2px;
+                    margin-left: 7px;
+                }
+            }
+            .hamburgerFixed {
+                display: flex;
+                flex-direction: column;
+                justify-content: space-between;
+                cursor: pointer;
+                transition: all 0.3s;
+                gap: 5px;
+                color: $color000;
+              
+                .bar {
+                  width: 50px;
+                  height: 4px;
+                 background-color: #313131;
+                  transition: all 0.3s;
+                  color: red;
+                  &:last-child{
+                    width: 50%;
+                    
+                  }
+                }
+              
+                &:hover {
+                  .bar {
+                    width: 50px;
+                    &:last-child {
+                      width: 50px;
+                    }
+                    &:first-child{
+                        width: 50%;
+                        margin-left: 50%
+                    }
+                  }
+                }
+              }
+              
+
+
+        }
+        .hamburgerFixedSideBar {
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            cursor: pointer;
+            transition: all 0.3s;
+            gap: 5px;
+            color: $color000;
+          
+            .bar {
+              width: 50px;
+              height: 4px;
+             background-color: #313131;
+              transition: all 0.3s;
+              color: red;
+              &:last-child{
+                width: 50%;
+                
+              }
+            }
+          
+            &:hover {
+              .bar {
+                width: 50px;
+                &:last-child {
+                  width: 50px;
+                }
+                &:first-child{
+                    width: 50%;
+                    margin-left: 50%
+                }
+              }
+            }
+        }
+
+
     }
+}
+
+
+#sideBar{
+    background-color: $colorWhite;
+    position: fixed;
+    top: 0;
+    width: 380px;
+    height: 100%;
+    transition:all 0.5s ease;
+    z-index: 111111111;
+    .sideBar-content{
+        position: relative;
+        padding: 110px 20px;
+        .sideBarCloseBtn{
+            cursor: pointer;
+            position: absolute;
+            top: 150px;
+            right: 50px;
+            span{
+                i{
+                    color: black;
+                    font-size: 28px;
+                }
+            }
+        }
+          .sideBarMobNav {
+            nav {
+              padding-top: 90px;
+              ul {
+                color: $color000;
+                li {
+                  padding-top: 20px;
+                  a {
+                    display: flex;
+                    justify-content: space-between;
+                    align-items: center;
+                    color: $color000;
+                    transition: all 0.5s ease;
+
+                    &:hover{
+                        color: $mainColor;
+                        transition: all 0.5s ease;
+                        transform: translateX(3px);
+                    }
+                    .homes{
+                        color: $mainColor;
+                    }
+                  }
+                  ul {
+                    overflow-y: auto;
+                    visibility: hidden;
+                    opacity: 0;
+                    height: 0px;
+                    transform: scaleY(0);
+                    transition: all 0.3s;
+                    li {
+                      padding: 10px;
+                      cursor: pointer;
+                      color: $color000;
+                      transition: all 0.5 ease;
+                      &:hover{
+                        color: $mainColor;
+                        transition: all 0.5s ease;
+                        transform: translateX(3px);
+                      }
+                    }
+                    &.active {
+                      visibility: visible;
+                      opacity: 1;
+                      position: relative;
+                      height: 150px;
+                      background-color: rgba(255, 255, 255, 0.05);
+                      margin: 20px 0 10px;
+                      transform: scaleY(1);
+                      transition: all 0.3s;
+                      transform-origin: top center;
+                      overflow: hidden;
+                      height: 150px;
+                    }
+                  }
+                }
+              }
+            }
+          }
+          
+    }
+}
+
+.sideBarMenu {
+    display: none;
+}
+
+.sideBarMenu.active {
+    display: block;
+} 

@@ -1,12 +1,12 @@
 #offCanvas {
-    position: fixed;
+position: fixed;
   top: 0;
   right: 0;
   width: 300px;
   height: 100%;
   background-color: #fff;
   transition: transform 0.5s ease;
-  z-index: 111111111;
+  z-index: 999999999999999999999;
   transform: translateX(100%); 
   overflow-y: auto;
     .offcanvas-content {
@@ -75,6 +75,27 @@
     }
     #offcanvasContentMain{
         padding: 0 40px;
+    }
+    .social-icons{
+        ul{
+            padding: 30px 30px;
+            li{
+                padding: 5px 5px;
+                cursor: pointer;
+                transition: all 0.5s ease;
+                a{
+                    i{
+                        font-size: 19px;
+                    }
+                    &:hover{
+                        color: $mainColor;
+                        transform: translateX(5px);
+                        transition: all 0.5s ease;
+
+                    }
+                }
+            }
+        }
     }
 
 
