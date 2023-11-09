@@ -1,0 +1,110 @@
+{
+  "products": [
+    {
+      "id": 1,
+      "category": "Automotive | Timeless",
+      "priceCategory": "MAY WE SUGGEST",
+      "title": "WHEEL RIM",
+      "image": "https://shiftup.qodeinteractive.com/wp-content/uploads/2021/10/shop-single-1-2.jpg",
+      "price": 65
+    },
+    {
+      "id": 2,
+      "category": "Automotive | Timeless",
+      "priceCategory": "BEST SELLING PRODUCTS",
+      "title": "GENERATOR",
+      "image": "https://shiftup.qodeinteractive.com/wp-content/uploads/2021/10/shop-single-2.jpg",
+      "price": 65
+    },
+    {
+      "id": 3,
+      "category": "Automotive | Timeless",
+      "priceCategory": "",
+      "title": "WHEEL RIM",
+      "image": "https://shiftup.qodeinteractive.com/wp-content/uploads/2021/10/shop-single-3.jpg",
+      "price": 65
+    },
+    {
+      "id": 4,
+      "category": "Automotive | Timeless",
+      "priceCategory": "",
+      "title": "WHEEL RIM",
+      "image": "https://shiftup.qodeinteractive.com/wp-content/uploads/2021/10/shop-single-9.jpg",
+      "price": 65
+    },
+    {
+      "id": 5,
+      "category": "Automotive | Timeless",
+      "priceCategory": "",
+      "title": "WHEEL RIM",
+      "image": "https://shiftup.qodeinteractive.com/wp-content/uploads/2021/10/shop-single-4.jpg",
+      "price": 65
+    },
+    {
+      "id": 6,
+      "category": "Automotive | Timeless",
+      "priceCategory": "",
+      "title": "WHEEL RIM",
+      "image": "https://shiftup.qodeinteractive.com/wp-content/uploads/2021/12/shop-single-new-13.jpg",
+      "price": 65
+    },
+    {
+      "id": 7,
+      "category": "Automotive | Timeless",
+      "priceCategory": "",
+      "title": "Wheel Rim",
+      "image": "https://shiftup.qodeinteractive.com/wp-content/uploads/2021/10/shop-single-5.jpg",
+      "price": 65
+    },
+    {
+      "id": 8,
+      "category": "Automotive | Timeless",
+      "priceCategory": "",
+      "title": "WHEEL RIM",
+      "image": "https://shiftup.qodeinteractive.com/wp-content/uploads/2021/10/shop-single-10.jpg",
+      "price": 65
+    },
+    {
+      "id": 9,
+      "category": "Automotive | Timeless",
+      "priceCategory": "",
+      "title": "WHEEL RIM",
+      "image": "https://shiftup.qodeinteractive.com/wp-content/uploads/2021/10/shop-single-6.jpg",
+      "price": 65
+    },
+    {
+      "id": 10,
+      "category": "Automotive | Timeless",
+      "priceCategory": "",
+      "title": "WHEEL RIM",
+      "image": "https://shiftup.qodeinteractive.com/wp-content/uploads/2021/10/shop-single-7.jpg",
+      "price": 65
+    },
+    {
+      "id": 11,
+      "category": "Automotive | Timeless",
+      "priceCategory": "",
+      "title": "WHEEL RIM",
+      "image": "https://shiftup.qodeinteractive.com/wp-content/uploads/2021/10/shop-single-8.jpg",
+      "price": 65
+    },
+    {
+      "id": 12,
+      "category": "Automotive | Timeless",
+      "priceCategory": "",
+      "title": "WHEEL RIM",
+      "image": "https://shiftup.qodeinteractive.com/wp-content/uploads/2021/10/shop-single-11.jpg",
+      "price": 65
+    }
+  ],
+  "comments": [
+    {
+      "id": 1,
+      "body": "some comment",
+      "postId": 1
+    }
+  ],
+  "profile": {
+    "name": "typicode"
+  }
+}
