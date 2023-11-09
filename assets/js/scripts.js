@@ -97,11 +97,16 @@ const sideBarOpenBtn = document.getElementById("hamburgerFixedSideBar");
 const sideBarCloseBtn = document.getElementById("sideBarCloseBtn");
 
 offCanvas.style.transform = "translateX(100%)";
-sideBar.style.transform = "translateY(-900px)";
+// sideBar.style.transform = "translateY(-900px)";
+
 
 function openSideBar() {
   offCanvas.style.transform = "translateX(100%)";
   sideBar.style.transform = "translateY(0)";
+  sideBar.style.zIndex = "19"
+  sideBar.style.opacity = "1"
+  sideBar.style.visibility = "visible"
+
 }
 
 function openOffCanvas() {
@@ -178,3 +183,14 @@ function positionHeight2() {
 
 window.addEventListener("scroll", positionHeight);
 window.addEventListener("scroll", positionHeight2);
+
+
+
+
+
+
+// loader
+// window.addEventListener("load", function() {
+//   const loaderContainer = document.querySelector(".loader-container");
+//   loaderContainer.style.display = "none"; 
+// });

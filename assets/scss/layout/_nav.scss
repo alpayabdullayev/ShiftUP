@@ -494,7 +494,10 @@
     width: 380px;
     height: 100%;
     transition:all 0.5s ease;
-    z-index: 111111111;
+    z-index: -19;
+    translate: transformY(-900px);
+    opacity: 0;
+    visibility: hidden;
     .sideBar-content{
         position: relative;
         padding: 110px 20px;
