@@ -5,6 +5,7 @@
 //abstracts
 @import "./abstracts/mixxin";
 @import "./abstracts/variable";
+@import "./abstracts/helpers";
 
 
 // Components
@@ -17,5 +18,4 @@
 @import "./layout/nav";
 
 // Pages
-@import "./pages/home"
-
+@import "./pages/home";

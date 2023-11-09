@@ -1,21 +1,23 @@
 //  Swipper and AOS Configuration
 
-
 var colImg = document.querySelectorAll(".colImg");
 var colContent = document.querySelectorAll(".colContent");
 var swiper = new Swiper(".mySwiper", {
   slidesPerView: 1,
   spaceBetween: 30,
-//   autoplay: {
-//     delay: 2500,
-//     disableOnInteraction: false,
-//   },
+  autoplay: {
+    delay: 2500,
+    disableOnInteraction: false,
+  },
   loop: true,
   delay: 2500,
   pagination: {
     el: ".swiper-pagination",
     clickable: true,
-  },
+    renderBullet: function (index, className) {
+      return '<span class="' + className + ' custom-bullet ">' + (index + 1) + '</span>';
+  }},
+  
   navigation: {
     nextEl: ".swiper-button-next",
     prevEl: ".swiper-button-prev",
@@ -41,8 +43,7 @@ var swiper = new Swiper(".mySwiper", {
         el.style.opacity = "1";
       });
       AOS.refresh();
-    },
-  }
-});
+    }
+}});
 
 AOS.init();

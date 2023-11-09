@@ -76,28 +76,78 @@
                             display: block;
                             border: none;
                             transition: all 0.5s ease;
+                            &::before{
+                                    content: "";
+                                    position: absolute;
+                                    right: -22px;
+                                    top: -16px;
+                                    width: 16px;
+                                    height: 16px;
+                                    z-index: 20;
+                                    background:$mainColor; 
+                            }
+
+                            &::after{
+                                content: "";
+                                position: absolute;
+                                right: -22px;
+                                bottom: -12px;
+                                width: 16px;
+                                height: 12px;
+                                z-index: 20;
+                                background:$mainColor; 
+                            }
                         
                             .car-item {
+                                position: relative;
+                                &:hover .car-content{
+                                    h2{
+                                        color:$colorWhite;
+                                    }
+                                }
                                 .car-img {
+                                    
                                     .secondary-img {
-                                        display: none;
                                         opacity: 0;
-                                        visibility: hidden;
                                         transition: all 0.5s ease;
+                                        position: absolute; 
+                                        top: 0; 
+                                        left: 0;
                                     }
                         
                                     &:hover {
                                         .primary-img {
-                                            display: none;
-                                            opacity: 0;
-                                            visibility: hidden;
+                                            opacity: 0;   
+                                            transition: all 0.5s ease;
+
                                         }
                         
                                         .secondary-img {
-                                            display: block;
                                             opacity: 1;
-                                            visibility: visible;
+                                            transition: all 0.5s ease;
+
                                         }
+                                    }
+
+                                }
+                                .car-content{
+                                    h2{
+                                        position: absolute;
+                                        left: 30px;
+                                        top: 30px;
+                                        text-transform: uppercase;
+                                        
+
+                                    }
+                                    span{
+                                        position: absolute;
+                                        left: 35px;
+                                        bottom: -20px;
+                                        font-weight: 600;
+                                        color: #000;
+                                        font-size: 110px;
+                                        color: transparent;
+                                        -webkit-text-stroke: 2px #e1e1e1;
                                     }
                                 }
                             }

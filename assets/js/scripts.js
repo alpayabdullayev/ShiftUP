@@ -1,6 +1,11 @@
 // Cursor 
-// const cursor = document.querySelector('.cursor');
+// document.addEventListener("mousemove", function (event) {
+//   const cursor = document.getElementById("custom-cursor");
+//   cursor.style.left = (event.clientX ) + "px"; 
+//   cursor.style.top = (event.clientY) + "px"; 
+// });
 
+// const cursor = document.getElementById('.custom-cursor');
 // document.addEventListener('mousemove', function(x) {
 //     cursor.style.cssText = "left: " + x.clientX + "px; top: " + x.clientY + "px;";
 // });
@@ -10,6 +15,22 @@
 
 // document.querySelector('.beforeItem2 a').addEventListener('mouseout', function() {
 //     this.classList.remove('active');
+// });
+// let body = document.querySelector("body");
+// let cursor = document.querySelector(".cursor");
+// body.addEventListener("mousemove", function(dets){
+//     cursor.style.left = dets.x + "px";
+//     cursor.style.top = dets.y + "px";
+
+// })
+
+// const FIX = 10;
+// document.addEventListener("mousemove", (event) => {
+//   const cursor = document.getElementById("cursor");
+//   let x = event.pageX;
+//   let y = event.pageY;
+//   cursor.style.left = `${x - FIX}px`;
+//   cursor.style.top = `${y - FIX}px`;
 // });
 
 
@@ -115,3 +136,4 @@ mobileNavlink.forEach((item, index) => {
     });
   });
 });
+
