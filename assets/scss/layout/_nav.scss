@@ -261,6 +261,11 @@
         justify-content: space-between;
         align-items: center;
         height: 72px;
+        .logo{
+          svg{
+            fill: black;
+          }
+        }
 
         .navbar-links {
                 
