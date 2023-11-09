@@ -137,3 +137,44 @@ mobileNavlink.forEach((item, index) => {
   });
 });
 
+
+
+
+
+
+
+const countElement = document.getElementById("count");
+const countElement2 = document.getElementById("count2");
+const height = 700;
+const height2 = 1990;
+
+function updateCountText(value, element) {
+  element.textContent = value + "% OFF";
+}
+
+function positionHeight() {
+  const scrollY = window.scrollY;
+  if (scrollY >= height) {
+    for (let i = 0; i <= 30; i++) {
+      setTimeout(() => {
+        updateCountText(i, countElement);
+      }, i * 100);
+    }
+    window.removeEventListener("scroll", positionHeight);
+  }
+}
+
+function positionHeight2() {
+  const scrollY = window.scrollY;
+  if (scrollY >= height2) {
+    for (let i = 0; i <= 50; i++) {
+      setTimeout(() => {
+        updateCountText(i, countElement2);
+      }, i * 100);
+    }
+    window.removeEventListener("scroll", positionHeight2);
+  }
+}
+
+window.addEventListener("scroll", positionHeight);
+window.addEventListener("scroll", positionHeight2);
