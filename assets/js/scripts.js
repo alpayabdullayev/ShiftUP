@@ -5,6 +5,8 @@
 //   cursor.style.top = (event.clientY) + "px"; 
 // });
 
+
+
 // const cursor = document.getElementById('.custom-cursor');
 // document.addEventListener('mousemove', function(x) {
 //     cursor.style.cssText = "left: " + x.clientX + "px; top: " + x.clientY + "px;";
@@ -38,12 +40,12 @@
 window.addEventListener("scroll", function () {
   let position = window.scrollY;
   let navbar2 = document.getElementById("navbar2");
-  let screenWidth = window.innerWidth; // Ekran genişliğini al
+  let screenWidth = window.innerWidth; 
 
   if (screenWidth > 991) {
     if (position > 170) {
       navbar2.style.display = "block";
-      navbar2.style.position = "fixed";
+      navbar2.style.position = "fixed"; 
       navbar2.style.top = "0";
       navbar2.style.left = "0";
       navbar2.style.width = "100%";
@@ -194,3 +196,11 @@ window.addEventListener("scroll", positionHeight2);
 //   const loaderContainer = document.querySelector(".loader-container");
 //   loaderContainer.style.display = "none"; 
 // });
+
+
+
+
+
+
+
+

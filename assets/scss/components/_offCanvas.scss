@@ -52,6 +52,14 @@ position: fixed;
             }
         }
     }
+    #totalCost{
+        background-color: $mainColor;
+        color: $colorWhite;
+        .totalcostMain{
+            min-height: 10vh;
+            padding: 0 20px;
+        }
+    }
 }
 
 // offCanvasSideBar
