@@ -1,245 +1,288 @@
-#header{
-    .header-content{
-        .header-top{
-            height: 72px;
-            background-color: $color000;
-            .logo{
-                svg{
-                    fill: white;
-                }
-            }
-            .search{
-                form{
-                    height: 48px;
-                    width: 700px;
-                    transition: width .2s ease-out;
-                    div{
-                        input{
-                            width: 80%;
-                            padding: 10px 30px;
-                            outline: 0;
-                            box-shadow: none;
-                            border: 0;
-                            background-color: #313131;
-                            font-size: 17px;
-                            line-height: 1.47em;
-                            font-weight: 400;
-                            color: #9a9a9a;
-                        }
-                        button{
-                            display: block;
-                            width: 100%;
-                            max-width: 68px;
-                            height: 45px;
-                            padding: 0;
-                            border: 0;
-                            font-size: 19px;
-                            color: #fff;
-                            background-color: #313131;
-                            position: relative;
-                            &::after{
-                                content: "";
-                                position: absolute;
-                                background-color:$mainColor ;
-                                left: 0;
-                                top: 0;
-                                width: 6px;
-                                height: 100%;
-                                z-index: 1;
-                                transition: width .4s;
-                            }
-                        }
-                    }
-                }
-            }
-            .store{
-                .spans{
-                    min-width: 68px;
-                    span{
-                        color: $colorWhite;
-                    }
-                    .count{
-                        font-size: 11px;
-                        background-color:$mainColor;
-                        padding: 4px;
-                        text-align: center;
-                        line-height: 1.4;
-                        color: #fff;
-                        position: relative;
-                        top: -2px;
-                        margin-left: 7px;
-                    }
-                }
-                .hamburger {
-                    display: flex;
-                    flex-direction: column;
-                    justify-content: space-between;
-                    cursor: pointer;
-                    transition: all 0.3s;
-                    gap: 5px;
-                  
-                    .bar {
-                      width: 50px;
-                      height: 4px;
-                      background-color: $colorWhite;
-                      transition: all 0.3s;
-                      &:last-child{
-                        width: 50%;
-                        
-                      }
-                    }
-                  
-                    &:hover {
-                      .bar {
-                        width: 50px;
-                        &:last-child {
-                          width: 50px;
-                        }
-                        &:first-child{
-                            width: 50%;
-                            margin-left: 50%
-                        }
-                      }
-                    }
-                  }
-            }
+#header {
+  .header-content {
+    .header-top {
+      height: 72px;
+      background-color: $color000;
+
+      .logo {
+        svg {
+          fill: white;
         }
-        .header-bottom {
-            height: 72px;
-            nav {
-              .navbar-links {
-                
-                .navbar-ul {
-                  .navbar-li {
-                    height: 100%;
-                    padding:17px;
-                    // position: relative;
+      }
 
-                    &:hover body{
-                        background-color: rgba(0,0,0,0.5);
-                    }
-                    .nav-link{
-                      position: relative;
-                      display: flex;
-                      
-                      align-items: center;
-                      height: 100%;
-                      font-weight: 600;
-                      text-transform: uppercase;
-                      transition: all 0.3s;
-                      color: $color000;
-                      &:hover::before{
-                        content: "";
-                        position: absolute;
-                        width: 100%;
-                        height: 6px;
-                        background-color: $mainColor;
-                        left: 0;
-                        top: -18px;
-                        transition: all 0.3s;
+      .search {
+        form {
+          height: 48px;
+          width: 700px;
+          transition: width .2s ease-out;
 
-                      }
-                    }
+          div {
+            input {
+              width: 80%;
+              padding: 10px 30px;
+              outline: 0;
+              box-shadow: none;
+              border: 0;
+              background-color: #313131;
+              font-size: 17px;
+              line-height: 1.47em;
+              font-weight: 400;
+              color: #9a9a9a;
+            }
 
-                    .dropdown {
-                        position: absolute;
-                        z-index: 1;
-                        box-shadow: rgba(17, 12, 46, 0.15) 0px 48px 100px 0px;
-                        padding: 15px 80px 15px 15px;
-                        min-width: 200px;
-                        text-align: left;
-                        opacity: 0;
-                        z-index: 999999;
-                        visibility: hidden;
-                        background: #fff;
-                        transform: scaleY(0);
-                        transition: all 0.4s;
-                        background-color: rgba(255,255,255,.8);
-                        .dropdown-item-li{
-                            padding: 12px;
-                            transition: all 0.5s ease;
-                            &:hover .dropdown-link{
-                                color: $mainColor;
-                                // transform: translateX(5px);
-                                margin-left: 5px;
-                                transition: all 0.5s ease;
-                            }
-                        }
-                        
-                      }
-            
-                      &::after {
-                        content: '';
-                        width: 0%;
-                        height: 1px;
-                        background-color: $mainColor;
-                        position: absolute;
-                        left: 0;
-                        top: 100%;
-                        transition: all 0.4s;
-                      }
-                      &:hover::after {
-                        width: 100%;
-                      }
-                      &:hover {
-                        .nav-link {
-                          color: $mainColor;
-                          transition: all 0.3s;
-                        }
-                      }
-                      .nav-link {
-                        font-size: 0.9rem;
-                        color: $color000;
-                      }
-                    }
-                    .beforeItem{
-                        background-color: $colorBgOpacity;
-                        position: relative;
-                        &::before{
-                          content: "";
-                          position: absolute;
-                          width: 100%;
-                          height: 6px;
-                          top: 0;
-                          left: 0;
-                          background-color: $mainColor;
-                          opacity: 1;
-                        }    
-                    }
-                    .nav-item:hover {
-                      .dropdown {
-                        position: absolute;
-                        box-shadow: rgba(17, 12, 46, 0.15) 0px 48px 100px 0px;
-                        padding: 15px 75px 15px 15px;
-                        text-align: left;
-                        opacity: 1;
-                        visibility: visible;
-                        transform: scaleY(1);
-                        transition: all 0.4s;
-                        min-width: 250px;
-                        .dropdown-link {
-                          color: $color000;
-                          &:hover{
-                            transform: translateX(20px);
-                          }
-                        }
-                      }
-                    }
+            button {
+              display: block;
+              width: 100%;
+              max-width: 68px;
+              height: 45px;
+              padding: 0;
+              border: 0;
+              font-size: 19px;
+              color: #fff;
+              background-color: #313131;
+              position: relative;
 
-
-
-                  }
-                }
-              }
-              .contact{
-
-                .support{
-                    background-color: rgba(0, 0, 0, 0);
-                    color: #7b7b7b;
-                    padding: 32px;
-                }
+              &::after {
+                content: "";
+                position: absolute;
+                background-color: $mainColor ;
+                left: 0;
+                top: 0;
+                width: 6px;
+                height: 100%;
+                z-index: 1;
+                transition: width .4s;
               }
             }
+          }
         }
-          
+      }
+
+      .store {
+        .spans {
+          min-width: 68px;
+
+          span {
+            color: $colorWhite;
+          }
+
+          .count {
+            font-size: 11px;
+            background-color: $mainColor;
+            padding: 4px;
+            text-align: center;
+            line-height: 1.4;
+            color: #fff;
+            position: relative;
+            top: -2px;
+            margin-left: 7px;
+          }
+        }
+
+        .hamburger {
+          display: flex;
+          flex-direction: column;
+          justify-content: space-between;
+          cursor: pointer;
+          transition: all 0.3s;
+          gap: 5px;
+
+          .bar {
+            width: 50px;
+            height: 4px;
+            background-color: $colorWhite;
+            transition: all 0.3s;
+
+            &:last-child {
+              width: 50%;
+
+            }
+          }
+
+          &:hover {
+            .bar {
+              width: 50px;
+
+              &:last-child {
+                width: 50px;
+              }
+
+              &:first-child {
+                width: 50%;
+                margin-left: 50%
+              }
+            }
+          }
+        }
+      }
     }
+
+    .header-bottom {
+      height: 72px;
+
+      nav {
+        .navbar-links {
+
+          .navbar-ul {
+            .navbar-li {
+              height: 100%;
+              padding: 17px;
+              // position: relative;
+
+              &:hover body {
+                background-color: rgba(0, 0, 0, 0.5);
+              }
+
+              .nav-link {
+                position: relative;
+                display: flex;
+
+                align-items: center;
+                height: 100%;
+                font-weight: 600;
+                text-transform: uppercase;
+                transition: all 0.3s;
+                color: $color000;
+
+                &:hover::before {
+                  content: "";
+                  position: absolute;
+                  width: 100%;
+                  height: 6px;
+                  background-color: $mainColor;
+                  left: 0;
+                  top: -18px;
+                  transition: all 0.3s;
+
+                }
+              }
+
+              .dropdown {
+                position: absolute;
+                z-index: 1;
+                box-shadow: rgba(17, 12, 46, 0.15) 0px 48px 100px 0px;
+                padding: 15px 80px 15px 15px;
+                min-width: 200px;
+                text-align: left;
+                opacity: 0;
+                z-index: 999999;
+                visibility: hidden;
+                background: #fff;
+                transform: scaleY(0);
+                transition: all 0.4s;
+                background-color: rgba(255, 255, 255, .8);
+
+                .dropdown-item-li {
+                  padding: 12px;
+                  transition: all 0.5s ease;
+
+                  &:hover .dropdown-link {
+                    color: $mainColor;
+                    // transform: translateX(5px);
+                    margin-left: 5px;
+                    transition: all 0.5s ease;
+                  }
+                }
+
+              }
+
+              &::after {
+                content: '';
+                width: 0%;
+                height: 1px;
+                background-color: $mainColor;
+                position: absolute;
+                left: 0;
+                top: 100%;
+                transition: all 0.4s;
+              }
+
+              &:hover::after {
+                width: 100%;
+              }
+
+              &:hover {
+                .nav-link {
+                  color: $mainColor;
+                  transition: all 0.3s;
+                }
+              }
+
+              .nav-link {
+                font-size: 0.9rem;
+                color: $color000;
+              }
+            }
+
+            .beforeItem {
+              background-color: $colorBgOpacity;
+              position: relative;
+
+              &::before {
+                content: "";
+                position: absolute;
+                width: 100%;
+                height: 6px;
+                top: 0;
+                left: 0;
+                background-color: $mainColor;
+                opacity: 1;
+              }
+            }
+
+            .nav-item:hover {
+              .dropdown {
+                position: absolute;
+                box-shadow: rgba(17, 12, 46, 0.15) 0px 48px 100px 0px;
+                padding: 15px 75px 15px 15px;
+                text-align: left;
+                opacity: 1;
+                visibility: visible;
+                transform: scaleY(1);
+                transition: all 0.4s;
+                min-width: 250px;
+
+                .dropdown-link {
+                  color: $color000;
+
+                  &:hover {
+                    transform: translateX(20px);
+                  }
+                }
+              }
+            }
+
+
+
+          }
+        }
+      }
+
+      .contact {
+
+        .support {
+          background-color: rgba(0, 0, 0, 0);
+          color: #7b7b7b;
+          padding: 32px;
+        }
+      }
+    }
+  }
+
+}
+
+// section top catagories
+
+      .qodef_m_title::before {
+        content: "";
+        width: 2px;
+        height: 14px;
+        background: rgb(255, 94, 0);
+        display: inline-block;
+        margin-right: 4px;
+
+      }
+
+      // 
+     
+ 
