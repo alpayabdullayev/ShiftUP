@@ -1,0 +1,73 @@
+#formPage{
+    background-color: $colorBgOpacity;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+#form {
+    padding: 40px;
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.2);
+    border-radius: 8px;
+    margin-top: 30px;
+    background-color: white;
+    max-width: 460px;
+
+    .title{
+        h1{
+            color: $mainColor
+        }
+    }
+
+  
+
+  
+    label, input {
+      display: block;
+      width: 80%;
+      padding-bottom: 10px;
+    }
+  
+    input {
+      width: 100%;
+      padding: 10px 20px;
+      border: 1px solid #e8e8e8;
+      color: #888;
+      font-size: 14px;
+      box-shadow: inset 0 2px 4px 0 rgba(206, 209, 224, 0.2);
+      border-radius: 5px;
+    }
+  
+  
+    button[type=submit] {
+      background:$mainColor ;
+      color: white;
+      font-size: 20px;
+      border-radius: 5px;
+      padding: 15px 25px;
+      border: none;
+      transition: all 0.5s ease;
+      cursor: pointer;
+  
+      &:hover {
+        background-color: #0915ba;
+        transition: all 0.5s ease;
+      }
+    }
+    .homelink{
+        background-color: $mainColor;
+        padding: 20px 30px;
+        margin-left: 30px;
+        color: $colorWhite;
+        background-color: #654ea3;
+        border: 1px solid white;
+        border-radius: 8px;
+        transition: all 0.5s ease;
+
+        &:hover{
+            background-color: $mainColor;
+            transition: all 0.5s ease;
+        }
+
+    }
+}

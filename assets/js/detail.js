@@ -1,4 +1,4 @@
-let detailSection = document.querySelector(".detailSection");
+let main = document.querySelector("main");
 
 let id = window.location.search.slice(4);
 
@@ -9,16 +9,39 @@ function CreateDetail(
   productTitle,
   productPrice
 ) {
-    const productDetail = document.createElement("div")
+    const productDetail = document.createElement("section")
     productDetail.classList.add("productDetail")
     productDetail.innerHTML = 
     `
-    <img src="${img_url}" alt="">
-    <h4 class="titleCard">${productTitle}</h4>
-    <span>$${productPrice}.00</span>
+      <section id="pageInfo">
+        <div class="conatiner">
+          <div class="howPage">
+            <a href="index.html">HOME</a> 
+            <span></span>
+            <a href="detail.html">SHOP</a>
+            <span></span>
+            <a href="">${productDataCategory}</a>
+          </div>
+        </div>
+      </section>
+        <section id="detail" class="full-height">
+          <div class="container">
+            <div class="detailSection">
+              <div class="detailImg">
+                <img src="${img_url}" alt="">
+              </div>
+              <div class="detailInfo d-flex justify-content-between">
+                <h1>${productTitle}</h1>
+                <h3>${productPrice}</h3>
+                <p>${productDataCategory}</p>
+                <p></p>
+              </div>
+            </div>
+          </div>
+        </section>
     `
 
-    detailSection.appendChild(productDetail);
+    main.appendChild(productDetail);
 }
 
 async function getProducts() {

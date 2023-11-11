@@ -1,0 +1,67 @@
+@import "../abstracts/variable";
+#pageInfo{
+    background-color: $colorBgOpacity;
+    height: 90px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    .howPage{
+        a{
+            padding-left: 10px;
+            color: $colorP ;
+            transition: all 0.5s ease;
+            font-weight: 500;
+            font-size: 14px;
+
+            &:hover{
+                color: $mainColor;
+                transition: all 0.5s ease;
+            }
+        }
+        span{
+            color: $mainColor;
+        }
+    }
+}
+
+
+#detail{
+    .detailSection{
+
+        .detailInfo{
+            padding: 90px;
+            h1{
+                font-weight: 700;
+                font-size: 54px;
+                color: $colorWhite;
+                background-color: $mainColor;
+                padding: 5px;
+                display: inline;
+                width: 100%;
+                
+            }
+            h3{
+                font-size: 44px;
+                font-weight: 500;
+            }
+        }
+    }
+}
+
+
+
+// ZOOM
+figure.zoom {
+    position: relative;
+    margin: 150px auto;
+    overflow: hidden;
+    cursor: zoom-in;
+  }
+figure.zoom img:hover {
+    opacity: 0;
+}
+figure.zoom img {
+    transition: opacity 0.5s;
+    display: block;
+    width: 100%;
+}

@@ -152,8 +152,8 @@ mobileNavlink.forEach((item, index) => {
 
 const countElement = document.getElementById("count");
 const countElement2 = document.getElementById("count2");
-const height = 700;
-const height2 = 1990;
+const height = 1900;
+const height2 = 3550;
 
 function updateCountText(value, element) {
   element.textContent = value + "% OFF";

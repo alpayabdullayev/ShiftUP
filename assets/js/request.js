@@ -123,19 +123,84 @@ function CreateDetail(
     productDataCategory,
     img_url,
     productTitle,
-    productPrice
+    productPrice,
+    Productcount
 ) {
     const productDetail = document.createElement("div");
     productDetail.classList.add("productDetail");
     
     productDetail.innerHTML = `
-        <img src="${img_url}" alt="">
-        <h4 class="titleCard">${productTitle}</h4>
-        <span>${productPrice}.00</span>
+    <section id="pageInfo">
+    <div class="container">
+      <div class="howPage">
+        <a href="index.html">HOME</a> 
+        <span>|</span>
+        <a href="detail.html">SHOP</a>
+        <span>|</span>
+        <a href="">${productDataCategory}</a>
+      </div>
+    </div>
+  </section>
+    <section id="detail" class="full-height">
+      <div class="container">
+        <div class="detailSection row d-flex align-items-center justify-content-between">
+          <div class="detailImg col-12 col-md-6">
+          <figure class="zoom" onmousemove="zoom(event)" style="background-image:url('${img_url}')">
+          <img src="${img_url}" />
+        </figure> 
+          </div>
+          <div class="detailInfo col-12 col-md-6 ">
+            <h1 class="">${productTitle}</h1>
+            <h3 class="pt-3">$${productPrice}.00</h3>
+            <p>
+            Aliquam lorem ante, dapibus in, viverra quis, feugiat a, tellus hasellus viverra nulla ut metus varius laort, uisque rutrum. Aenean imperdiet. Etiam ultricies nisi vel augue urabitur.
+            </p>
+           
+
+            <button class="addtocart page-btn left-to-right">AddToCart</button>
+          
+
+            <p class="pt-3">CATEGORIES:${productDataCategory}</p>  
+            <p>SKU:
+            03657-1</p>
+            
+          </div>
+        </div>
+      </div>
+    </section>
     `;
-    let detailSection = document.querySelector(".detailSection");
-    detailSection.appendChild(productDetail);
+    let all = document.querySelector("#all");
+    all.appendChild(productDetail);
+
+    const addToCartButton = productDetail.querySelector('.addtocart');
+    addToCartButton.addEventListener('click', (e) => {
+        e.preventDefault();
+        addToBasket(productId, productDataCategory, img_url, productTitle, productPrice, Productcount);
+    });
     
+}
+function addToBasket(productId, productDataCategory, img_url, productTitle, productPrice, Productcount) {
+  if (basketArr.find((x) => x.productId === productId)) {
+      return;
+  }
+
+  let product = {
+      productId,
+      productDataCategory,
+      img_url,
+      productTitle,
+      productPrice,
+      Productcount: 1,
+  };
+
+  basketArr.push(product);
+  setLocalStorage("basket", basketArr);
+
+  generateBasketCards();
+  bascetCountQuantity.textContent = basketArr.length;
+  bascetCountQuantity1.textContent = basketArr.length;
+  totalCost += productPrice;
+  updateTotalCostDisplay();
 }
 
 async function getProducts() {
@@ -152,7 +217,9 @@ async function getProducts() {
                     element.category,
                     element.image,
                     element.title,
-                    element.price
+                    element.price,
+                    element.Productcount
+
                 );
                 found = true;
             }
@@ -181,6 +248,8 @@ async function getProducts() {
 
 
 
+
+
 let localLength = getLocalStorage("basket").length;
 bascetCountQuantity.textContent = basketArr.length;
 bascetCountQuantity1.textContent = basketArr.length;
@@ -201,8 +270,8 @@ function generateBasketCards() {
             <div class="cardName"><h5>${product.productTitle}</h5></div>
             <div class="cardCount">
             <span>${product.productPrice} x</span>
-            
-            <button onclick="decreaseCount(${product.productId})">-</button><span>${product.Productcount}</span> <button onclick="increaseCount(${product.productId})">+</button>
+            <span>${product.Productcount}</span>
+            <button style="min-width: 21px;"  onclick="decreaseCount(${product.productId})"><i class="fa-solid fa-chevron-down"></i></button>  <button onclick="increaseCount(${product.productId})"><i class="fa-solid fa-chevron-up"></i></button>
             </div>
             
         </div>
@@ -281,7 +350,7 @@ function calculateTotalCost() {
     return totalCost;
 }
   
-  function updateTotalCostDisplay() {
+function updateTotalCostDisplay() {
     const totalCost = calculateTotalCost();
     const discountedTotalCost = calculateDiscountedTotalCost();
     const totalCount = document.querySelector("#totalCost");
@@ -296,7 +365,7 @@ function calculateTotalCost() {
     }
 }
   
-  function calculateDiscountedTotalCost() {
+function calculateDiscountedTotalCost() {
     const totalCost = basketArr.reduce((acc, product) => {
       let discountedPrice = product.productPrice;
       if (product.Productcount >= 5) {
