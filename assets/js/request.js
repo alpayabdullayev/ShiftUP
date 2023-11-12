@@ -141,7 +141,7 @@ function CreateDetail(
       </div>
     </div>
   </section>
-    <section id="detail" class="full-height">
+    <section id="detail" class="full-heightDP">
       <div class="container">
         <div class="detailSection row d-flex align-items-center justify-content-between">
           <div class="detailImg col-12 col-md-6">
@@ -160,7 +160,7 @@ function CreateDetail(
             <button class="addtocart page-btn left-to-right">AddToCart</button>
           
 
-            <p class="pt-3">CATEGORIES:${productDataCategory}</p>  
+            <p class="pt-3">CATEGORIES: ${productDataCategory}</p>  
             <p>SKU:
             03657-1</p>
             
@@ -180,27 +180,28 @@ function CreateDetail(
     
 }
 function addToBasket(productId, productDataCategory, img_url, productTitle, productPrice, Productcount) {
-  if (basketArr.find((x) => x.productId === productId)) {
-      return;
-  }
+    const existingProduct = basketArr.find((x) => x.productId === productId);
 
-  let product = {
-      productId,
-      productDataCategory,
-      img_url,
-      productTitle,
-      productPrice,
-      Productcount: 1,
-  };
+    if (existingProduct) {
+        existingProduct.Productcount++;
+    } else {
+        let product = {
+            productId,
+            productDataCategory,
+            img_url,
+            productTitle,
+            productPrice,
+            Productcount: 1,
+        };
+        basketArr.push(product);
+    }
 
-  basketArr.push(product);
-  setLocalStorage("basket", basketArr);
-
-  generateBasketCards();
-  bascetCountQuantity.textContent = basketArr.length;
-  bascetCountQuantity1.textContent = basketArr.length;
-  totalCost += productPrice;
-  updateTotalCostDisplay();
+    setLocalStorage("basket", basketArr);
+    generateBasketCards();
+    updateTotalCostDisplay();
+    bascetCountQuantity.textContent = basketArr.length;
+    bascetCountQuantity1.textContent = basketArr.length;
+    totalCost += productPrice;
 }
 
 async function getProducts() {
@@ -330,6 +331,13 @@ function decreaseCount(productId) {
       updateTotalCostDisplay();
     }
     console.log("salam");
+}
+function updateBasket() {
+    setLocalStorage("basket", basketArr);
+    generateBasketCards();
+    updateTotalCostDisplay();
+    bascetCountQuantity.textContent = basketArr.length;
+    bascetCountQuantity1.textContent = basketArr.length;
 }
 
 

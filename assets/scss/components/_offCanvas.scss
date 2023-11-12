@@ -24,6 +24,7 @@ position: fixed;
             justify-content: center;
             align-items: center;
             gap: 20px;
+            margin-top: 10px;
             .card-img{
                 width: 100px;
             }
@@ -34,8 +35,9 @@ position: fixed;
             }
             .cardCount{
                 button{
-                    background-color: #505050;
-                    border: 1px solid #505050;
+                    background-color: $mainColor;
+                    border: 1px solid $mainColor;
+
                     color: #ffffff;
                     padding: 5px;
                     text-align: center;

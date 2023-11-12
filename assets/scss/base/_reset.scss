@@ -33,3 +33,11 @@ ul,ol {
     padding-bottom: 80px;
 
 }
+
+.full-heightDP{
+    min-height: 100vh;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}

@@ -10,91 +10,91 @@
     },
     {
       "id": 2,
-      "category": "Automotive | Timeless",
+      "category": "AUTOMOTIVE",
       "priceCategory": "BEST SELLING PRODUCTS",
       "title": "GENERATOR",
       "image": "https://shiftup.qodeinteractive.com/wp-content/uploads/2021/10/shop-single-2.jpg",
-      "price": 65
+      "price": 1100
     },
     {
       "id": 3,
       "category": "Automotive | Timeless",
       "priceCategory": "",
-      "title": "WHEEL RIM",
+      "title": "OIL FILTERS",
       "image": "https://shiftup.qodeinteractive.com/wp-content/uploads/2021/10/shop-single-3.jpg",
-      "price": 65
+      "price": 200
     },
     {
       "id": 4,
-      "category": "Automotive | Timeless",
+      "category": "Automotive",
       "priceCategory": "",
-      "title": "WHEEL RIM",
+      "title": "SPARKS",
       "image": "https://shiftup.qodeinteractive.com/wp-content/uploads/2021/10/shop-single-9.jpg",
-      "price": 65
+      "price": 75
     },
     {
       "id": 5,
-      "category": "Automotive | Timeless",
+      "category": "Automotive",
       "priceCategory": "",
-      "title": "WHEEL RIM",
+      "title": "COUPLING PARTS",
       "image": "https://shiftup.qodeinteractive.com/wp-content/uploads/2021/10/shop-single-4.jpg",
-      "price": 65
+      "price": 120
     },
     {
       "id": 6,
       "category": "Automotive | Timeless",
       "priceCategory": "",
-      "title": "WHEEL RIM",
+      "title": "CONDITIONERS",
       "image": "https://shiftup.qodeinteractive.com/wp-content/uploads/2021/12/shop-single-new-13.jpg",
-      "price": 65
+      "price": 120  
     },
     {
       "id": 7,
-      "category": "Automotive | Timeless",
+      "category": "Automotive",
       "priceCategory": "",
-      "title": "Wheel Rim",
+      "title": "OILS",
       "image": "https://shiftup.qodeinteractive.com/wp-content/uploads/2021/10/shop-single-5.jpg",
-      "price": 65
+      "price": 50
     },
     {
       "id": 8,
       "category": "Automotive | Timeless",
       "priceCategory": "",
-      "title": "WHEEL RIM",
+      "title": "RIMS",
       "image": "https://shiftup.qodeinteractive.com/wp-content/uploads/2021/10/shop-single-10.jpg",
-      "price": 65
+      "price": 50
     },
     {
       "id": 9,
       "category": "Automotive | Timeless",
       "priceCategory": "",
-      "title": "WHEEL RIM",
+      "title": " COOLERS",
       "image": "https://shiftup.qodeinteractive.com/wp-content/uploads/2021/10/shop-single-6.jpg",
-      "price": 65
+      "price": 400
     },
     {
       "id": 10,
       "category": "Automotive | Timeless",
       "priceCategory": "",
-      "title": "WHEEL RIM",
+      "title": "AIR FILTERS",
       "image": "https://shiftup.qodeinteractive.com/wp-content/uploads/2021/10/shop-single-7.jpg",
-      "price": 65
+      "price": 85
     },
     {
       "id": 11,
       "category": "Automotive | Timeless",
       "priceCategory": "",
-      "title": "WHEEL RIM",
+      "title": "CAR ACCUMULATOR",
       "image": "https://shiftup.qodeinteractive.com/wp-content/uploads/2021/10/shop-single-8.jpg",
-      "price": 65
+      "price": 75
     },
     {
       "id": 12,
       "category": "Automotive | Timeless",
       "priceCategory": "",
-      "title": "WHEEL RIM",
+      "title": "BRAKE DISC",
       "image": "https://shiftup.qodeinteractive.com/wp-content/uploads/2021/10/shop-single-11.jpg",
-      "price": 65
+      "price": 31
     }
   ],
   "comments": [

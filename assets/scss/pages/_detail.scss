@@ -65,3 +65,41 @@ figure.zoom img {
     display: block;
     width: 100%;
 }
+
+
+.tabs-container {
+display: flex;
+border-bottom:5px solid $mainColor;
+border-radius: 1px;
+padding-bottom: 5px;
+font-size: 20px;
+font-weight: 700;
+}
+
+.tabs {
+
+padding: 10px;
+cursor: pointer;
+border: none;
+background: none;
+
+}
+
+.tabs.active {   
+    transition: all 0.5s ease;
+    content: "";
+    background: $mainColor;
+    transition: all .3s;   
+    color: $colorWhite; 
+   
+}
+
+.content {
+display: none;
+padding: 50px 0;
+border: none;
+}
+
+.content.active-content {
+display: block;
+}
