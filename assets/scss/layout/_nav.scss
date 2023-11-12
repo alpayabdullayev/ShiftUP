@@ -383,6 +383,7 @@
                     opacity: 1;
                     visibility: visible;
                     transform: translateY(10px);
+                    z-index: 9999;
                     transition: all 0.4s;
                     min-width: 250px;
                     .dropdown-link {

@@ -22,12 +22,12 @@
 
 // Layout
 @import "./layout/nav";
-@import"./layout/footer";
 
 // Pages
 @import "./components/products";
 @import "./pages/404";
 @import "./base/responsive";
+@import "./layout/footer";
 
 @import "./pages/home";
 @import "./pages/detail";
@@ -35,6 +35,6 @@
 
 
 
-
+@import "./components/contact";
 
 @import "./pages/form"

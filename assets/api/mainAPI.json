@@ -46,7 +46,7 @@
       "priceCategory": "",
       "title": "CONDITIONERS",
       "image": "https://shiftup.qodeinteractive.com/wp-content/uploads/2021/12/shop-single-new-13.jpg",
-      "price": 120  
+      "price": 120
     },
     {
       "id": 7,
@@ -97,14 +97,48 @@
       "price": 31
     }
   ],
-  "comments": [
+  "contacts": [
     {
       "id": 1,
-      "body": "some comment",
-      "postId": 1
+      "name": "Rahim",
+      "email": "rehim.com",
+      "message": "I need a HD Matrix LED Headlight for my Audi A6 C8!"
+    },
+    {
+      "name": "Musa",
+      "email": "musa.com",
+      "message": "I need Michelin Pilot Super Sport 275/35 R21 tyres for my wheels",
+      "id": 2
+    },
+    {
+      "name": "",
+      "email": "",
+      "message": "",
+      "id": 3
+    },
+    {
+      "name": "",
+      "email": "",
+      "message": "",
+      "id": 4
+    },
+    {
+      "name": "",
+      "email": "",
+      "message": "",
+      "id": 5
+    },
+    {
+      "name": "alpay",
+      "email": "alpayabdullayev",
+      "message": "123",
+      "id": 6
+    },
+    {
+      "name": "alpay",
+      "email": "alpayabdullayev",
+      "message": "salam dostlar",
+      "id": 7
     }
-  ],
-  "profile": {
-    "name": "typicode"
-  }
+  ]
 }
