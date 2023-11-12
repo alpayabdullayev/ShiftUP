@@ -10,98 +10,123 @@
     },
     {
       "id": 2,
-      "category": "Automotive | Timeless",
+      "category": "Automotive",
       "priceCategory": "BEST SELLING PRODUCTS",
       "title": "GENERATOR",
       "image": "https://shiftup.qodeinteractive.com/wp-content/uploads/2021/10/shop-single-2.jpg",
-      "price": 65
+      "price": 1100
     },
     {
       "id": 3,
       "category": "Automotive | Timeless",
-      "priceCategory": "",
-      "title": "WHEEL RIM",
+      "priceCategory": "MAY WE SUGGEST",
+      "title": "OIL FILTERS",
       "image": "https://shiftup.qodeinteractive.com/wp-content/uploads/2021/10/shop-single-3.jpg",
-      "price": 65
+      "price": 200
     },
     {
       "id": 4,
-      "category": "Automotive | Timeless",
-      "priceCategory": "",
-      "title": "WHEEL RIM",
+      "category": "Automotive",
+      "priceCategory": "BEST SELLING PRODUCTS",
+      "title": "SPARKS",
       "image": "https://shiftup.qodeinteractive.com/wp-content/uploads/2021/10/shop-single-9.jpg",
-      "price": 65
+      "price": 75
     },
     {
       "id": 5,
-      "category": "Automotive | Timeless",
+      "category": "Automotive",
       "priceCategory": "",
-      "title": "WHEEL RIM",
+      "title": "COUPLING PARTS",
       "image": "https://shiftup.qodeinteractive.com/wp-content/uploads/2021/10/shop-single-4.jpg",
-      "price": 65
+      "price": 120
     },
     {
       "id": 6,
       "category": "Automotive | Timeless",
       "priceCategory": "",
-      "title": "WHEEL RIM",
+      "title": "CONDITIONERS",
       "image": "https://shiftup.qodeinteractive.com/wp-content/uploads/2021/12/shop-single-new-13.jpg",
-      "price": 65
+      "price": 120
     },
     {
       "id": 7,
-      "category": "Automotive | Timeless",
+      "category": "Automotive",
       "priceCategory": "",
-      "title": "Wheel Rim",
+      "title": "OILS",
       "image": "https://shiftup.qodeinteractive.com/wp-content/uploads/2021/10/shop-single-5.jpg",
-      "price": 65
+      "price": 50
     },
     {
       "id": 8,
       "category": "Automotive | Timeless",
       "priceCategory": "",
-      "title": "WHEEL RIM",
+      "title": "RIMS",
       "image": "https://shiftup.qodeinteractive.com/wp-content/uploads/2021/10/shop-single-10.jpg",
-      "price": 65
+      "price": 50
     },
     {
       "id": 9,
       "category": "Automotive | Timeless",
       "priceCategory": "",
-      "title": "WHEEL RIM",
+      "title": "COOLERS",
       "image": "https://shiftup.qodeinteractive.com/wp-content/uploads/2021/10/shop-single-6.jpg",
-      "price": 65
+      "price": 400
     },
     {
       "id": 10,
       "category": "Automotive | Timeless",
-      "priceCategory": "",
-      "title": "WHEEL RIM",
+      "priceCategory": "TOP RATED PRODUCTS",
+      "title": "AIR FILTERS",
       "image": "https://shiftup.qodeinteractive.com/wp-content/uploads/2021/10/shop-single-7.jpg",
-      "price": 65
+      "price": 85
     },
     {
       "id": 11,
       "category": "Automotive | Timeless",
-      "priceCategory": "",
-      "title": "WHEEL RIM",
+      "priceCategory": "BEST SELLING PRODUCTS",
+      "title": "CAR ACCUMULATOR",
       "image": "https://shiftup.qodeinteractive.com/wp-content/uploads/2021/10/shop-single-8.jpg",
-      "price": 65
+      "price": 75
     },
     {
       "id": 12,
       "category": "Automotive | Timeless",
-      "priceCategory": "",
-      "title": "WHEEL RIM",
+      "priceCategory": "MAY WE SUGGEST",
+      "title": "BRAKE DISC",
       "image": "https://shiftup.qodeinteractive.com/wp-content/uploads/2021/10/shop-single-11.jpg",
-      "price": 65
+      "price": 50
     }
   ],
-  "comments": [
+  "contacts": [
     {
       "id": 1,
-      "body": "some comment",
-      "postId": 1
+      "name": "Rahim",
+      "email": "rehim.com",
+      "message": "I need a HD Matrix LED Headlight for my Audi A6 C8!"
+    },
+    {
+      "name": "Musa",
+      "email": "musa.com",
+      "message": "I need Michelin Pilot Super Sport 275/35 R21 tyres for my wheels",
+      "id": 2
+    },
+    {
+      "name": "",
+      "email": "",
+      "message": "",
+      "id": 3
+    },
+    {
+      "name": "",
+      "email": "",
+      "message": "",
+      "id": 4
+    },
+    {
+      "name": "",
+      "email": "",
+      "message": "",
+      "id": 5
     }
   ],
   "profile": {

@@ -10,12 +10,16 @@
 // Components
 @import "./components/cursor";
 @import "./components/products";
+@import "./components/contact";
 
 // Layout
 @import "./layout/nav";
+@import "./layout/footer";
 
 // Pages
 
 //Base
-@import "./base/responsive"
+@import "./base/responsive";
+
+
 

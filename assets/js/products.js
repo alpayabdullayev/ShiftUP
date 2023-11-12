@@ -1,4 +1,4 @@
-const productsAPI = "  http://localhost:3000/products"
+const productsAPI = "http://localhost:3000/products"
 
 async function productsData() {
     try {
@@ -34,4 +34,4 @@ function addProductCards(data) {
             `
         productsList.append(productCart)
     });
-}
+};

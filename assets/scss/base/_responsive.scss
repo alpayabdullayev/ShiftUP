@@ -1,7 +1,67 @@
+@media screen and (max-width: 840px) {
+    .contact-main-container {
+        flex-direction: column;
+        gap: 50px;
+    }
+
+    #contact-section h1 {
+        font-size: 50px;
+        padding-left: 20px;
+        padding-top: 40px;
+    }
+}
+
 @media screen and (max-width: 650px) {
     .products-main-container {
         max-width: 270px;
         margin-left: auto;
         margin-right: auto;
     }
+
+    .contact-right {
+        max-width: 350px;
+    }
+
+    .contact-left {
+        max-width: 450px;
+    }
+}
+
+@media screen and (max-width: 525px) {
+    .contact-left {
+        max-width: 350px;
+
+        p {
+            max-width: 350px;
+        }
+
+        h2 {
+            max-width: 350px;
+            font-size: 25px;
+        }
+    }
+}
+
+@media screen and (max-width: 400px) {
+    .contact-left {
+        max-width: 25px;
+
+        p {
+            max-width: 250px;
+        }
+
+        h2 {
+            max-width: 250px;
+            font-size: 25px;
+        }
+    }
+
+    .contact-right {
+        max-width: 230px;
+
+        button {
+            width: 220px !important;
+        }
+    }
+    
 }
