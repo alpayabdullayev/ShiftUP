@@ -72,12 +72,12 @@ body {
   border-radius: 50px;
 }
 
-.userLogin a {
+.userLogin span {
   color: #fff;
   transition: all 0.5s ease;
   background-color: #000;
 }
-.userLogin a:hover {
+.userLogin span:hover {
   color: #FF4D24;
   transition: all 0.5s ease;
 }

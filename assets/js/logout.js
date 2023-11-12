@@ -5,7 +5,7 @@ if (JSON.parse(localStorage.getItem("userData"))) {
     if (userData && userData.isLoggedIn) {
         let divLogindi = document.createElement("div") 
         userLogin.innerHTML= ''
-        divLogindi.innerHTML =     `<a href="#">            <span class=""><i style="color: #fff;" class="fa-solid fa-user"></i> ` + userData.name + `</span></a> <span id="logout"><i class="fa-solid fa-arrow-right-from-bracket" style="color: #ffffff;"></i></span>`;
+        divLogindi.innerHTML =     `     <span class=""><i style="color: #fff;" class="fa-solid fa-user"></i> ` + userData.name + `</span> <a href="">       <span id="logout"><i class="fa-solid fa-arrow-right-from-bracket" style="color: #ffffff;"></i></span></a>`;
         
         
         // divLogindi.appendChild(logout) 
