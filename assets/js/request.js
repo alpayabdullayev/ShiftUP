@@ -6,7 +6,7 @@ let basketArr = getLocalStorage("basket") || [];
 
 let totalCost = 0;
 
-let id = window.location.search.slice(4);
+let id = window.location.search.slice(4); 
 let detailSection = document.querySelector(".detailSection");
 
 // let addToBasketClickCount = 0;
@@ -125,6 +125,7 @@ function CreateDetail(
     productTitle,
     productPrice,
     Productcount
+    
 ) {
     const productDetail = document.createElement("div");
     productDetail.classList.add("productDetail");
@@ -210,42 +211,45 @@ async function getProducts() {
         console.log(res.data);
 
         let found = false;
-
-        res.data.forEach(element => {
-            if (id && element.id === parseInt(id)) {
-                CreateDetail(
-                    element.id,
-                    element.category,
-                    element.image,
-                    element.title,
-                    element.price,
-                    element.Productcount
-
-                );
-                found = true;
-            }
-        }); 
-        // if (!found) {
-        //     window.location.href = "404.html";
-        //     return; 
-        // }
-        if (!found) {
+        if (id) {
             res.data.forEach(element => {
-                CreateCard(
-                    element.id,
-                    element.category,
-                    element.image,
-                    element.title,  
-                    element.price
-                );
+                if (element.id === parseInt(id)) {
+                    CreateDetail(
+                        element.id,
+                        element.category,
+                        element.image,
+                        element.title,
+                        element.price,
+                        element.Productcount
+                    );
+                    found = true;
+                }
             });
         }
-        
+
+        if (id && !found) {
+            window.location.href = "404.html";
+            return;
+        }
+
+        res.data.forEach(element => {
+            CreateCard(
+                element.id,
+                element.category,
+                element.image,
+                element.title,
+                element.price
+            );
+        });
 
     } catch (error) {
         console.log("error", error);
     }
 }
+
+
+
+
 
 
 

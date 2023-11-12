@@ -5,10 +5,10 @@ var colContent = document.querySelectorAll(".colContent");
 var swiper = new Swiper(".mySwiper", {
   slidesPerView: 1,
   spaceBetween: 30,
-  autoplay: {
-    delay: 2500,
-    disableOnInteraction: false,
-  },
+  // autoplay: {
+  //   delay: 2500,
+  //   disableOnInteraction: false,
+  // },
   loop: true,
   delay: 2500,
   pagination: {

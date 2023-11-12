@@ -15,6 +15,8 @@
 @import "./components/components";
 @import "./components/offCanvas";
 @import "./components/loaders";
+@import "./components/backToTop";
+@import "./components/toast";
 
 
 
@@ -24,7 +26,7 @@
 
 // Pages
 @import "./components/products";
-
+@import "./pages/404";
 @import "./base/responsive";
 
 @import "./pages/home";
