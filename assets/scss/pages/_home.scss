@@ -305,3 +305,61 @@
 
 
 
+.qodef_mobile_page {
+
+    background-color: #181717;
+    min-height: 300px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+
+    .qodef_mobile_text {
+        color: white;
+
+        p {
+            color: gray;
+        }
+
+    }
+
+}
+
+
+
+// section top caegories start
+.elementor_text {
+    text-align: center;
+
+    h4 {
+        font-size: 45px;
+    }
+}
+
+.container_latest_blog {
+    margin-top: 70px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 60px;
+
+    .text_blog {
+        h2 {
+            font-size: 20px;
+        }
+
+        p {
+            color: gray;
+
+        }
+    }
+
+    .blog {
+
+
+        width: 440px;
+        height: 450px;
+    }
+}
+
+// section top categories end
