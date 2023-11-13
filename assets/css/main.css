@@ -894,9 +894,9 @@ body {
     gap: 50px;
   }
   #contact-section h1 {
-    font-size: 50px;
-    padding-left: 20px;
-    padding-top: 40px;
+    font-size: 50px !important;
+    padding-left: 20px !important;
+    padding-top: 40px !important;
   }
 }
 @media screen and (max-width: 650px) {
@@ -1495,7 +1495,8 @@ figure.zoom img {
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 100vh;
+  min-height: 100vh;
+  flex-wrap: wrap;
 }
 
 #form {
