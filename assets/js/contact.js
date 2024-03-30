@@ -1,4 +1,4 @@
-const baseUrl="http://localhost:5000/contacts"
+const baseUrl="http://localhost:3000/contacts"
 
 async function fetchData() {
     try {

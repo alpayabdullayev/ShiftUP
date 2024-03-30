@@ -72,16 +72,6 @@ body {
   border-radius: 50px;
 }
 
-.userLogin span {
-  color: #fff;
-  transition: all 0.5s ease;
-  background-color: #000;
-}
-.userLogin span:hover {
-  color: #FF4D24;
-  transition: all 0.5s ease;
-}
-
 .page-btn {
   padding: 25px 49px 21px 46px;
   font-weight: 600;

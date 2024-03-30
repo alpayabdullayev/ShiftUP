@@ -56,6 +56,7 @@ figure.zoom {
     margin: 150px auto;
     overflow: hidden;
     cursor: zoom-in;
+    opacity: 0;
   }
 figure.zoom img:hover {
     opacity: 0;
@@ -64,6 +65,7 @@ figure.zoom img {
     transition: opacity 0.5s;
     display: block;
     width: 100%;
+    opacity: 0;
 }
 
 

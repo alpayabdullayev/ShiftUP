@@ -1,4 +1,4 @@
-// const productsAPI = "  http://localhost:5000/products"
+// const productsAPI = "  http://localhost:3000/products"
 
 // async function productsData() {
 //     try {
